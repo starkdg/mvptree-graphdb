@@ -33,13 +33,13 @@ queries.
 
 ## Parameters
 
-   branch factor (bf) - number of branches off of each internal node (e.g. 2 or 3)
-   no. levels    (nl) - number of levels for each internal (non-leaf) node. (e.g. 2, 4 or 8)
-   path length   (pl) - number of pre-computed distances to store for each data point. Each
-                        distance represents that point's distance from respective vantage point
-				        in a path from the root node down to the leaf node in which the data
-						point is in. (e.g. 4, 8, 16, ...)
-   leaf minimum  (lm) - Minimum data points in a leaf node.  
+   - branch factor (bf) - number of branches off of each internal node (e.g. 2 or 3)
+   - no. levels    (nl) - number of levels for each internal (non-leaf) node. (e.g. 2, 4 or 8)
+   - path length   (pl) - number of pre-computed distances to store for each data point. Each
+                          distance represents that point's distance from respective vantage point
+				          in a path from the root node down to the leaf node in which the data
+						  point is in. (e.g. 4, 8, 16, ...)
+   - leaf minimum  (lm) - Minimum data points in a leaf node.  
 
    Note: Before a leaf node is converted to an internal (non-leaf) node, it must be assigned
    at least (bf^nl)xlm number of datapoints. This ensures that internal nodes are well balanced
